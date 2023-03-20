@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div>counter val:  {{counter.count}}</div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div>counter val: {{ counter.count }}</div>
     <button @click="counter.increment()">INCREMENT</button>
   </div>
 </template>
@@ -34,6 +34,14 @@ export default defineComponent({
     return {
       counter,
     };
+  },
+  methods: {
+    testMethod() {},
+  },
+  computed: {
+    test() {
+      return 'test';
+    },
   },
 });
 </script>
