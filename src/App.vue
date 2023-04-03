@@ -23,14 +23,13 @@ const useCounterStore = defineStore('counter', {
   },
 });
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {
     HelloWorld,
   },
   setup() {
     const counter = useCounterStore(pinia);
-
     return {
       counter,
     };
@@ -43,7 +42,8 @@ export default defineComponent({
       return 'test';
     },
   },
-});
+  data: () => ({}),
+};
 </script>
 
 <style>
